@@ -1,0 +1,227 @@
+body{
+    /*margen predeterminado*/
+    margin: 0;
+    /*margen pa' dentro*/
+    padding: 0;
+    /*tamaño del texto*/
+    font-size: 13px;
+    /*fuente del textp*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-----****************************-------*/
+/*NAVEGACION*/
+header{
+    width: 100%; /*ancho*/
+    height: auto;
+}
+
+/*entramos al nav que esta dentro de header*/
+header nav{
+    display: flex; /*nuestros elementos hijos se van a poder mover*/
+    justify-content: flex-end; /*pone los elementos en la parte derecha de la pantalla*/
+    height: auto;
+}
+
+header nav .nav-right-section{
+    list-style: none; /*eliminamos viñetas*/
+    width: 223px; /*le damos ancho*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+nav .nav-right-section a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain; /*contiene a la imagen*/
+    margin-right: 22px;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+nav .nav-right-section img{
+    border-radius: 100px;
+    width: 35px;
+}
+
+/*-----****************************-------*/
+/*MAIN*/
+
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+
+/*seccion del logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto; /* vertical | horizontal*/
+    margin-bottom: 30px;
+}
+
+/*logo google*/
+main .main-logo img{
+    height: 100px;
+}
+
+/*seccion del contenedor*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*contenedor de busqueda*/
+main .main-input-container{
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    width: 572px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*caja del input*/
+main .main-input input{
+    height: 44px;
+    width: 510px;
+    border: none;
+    outline: none; /*es para quitar borde azul al hacer clic*/
+
+}
+
+/*seccion de la lupa*/
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center; /*centramos la imagen*/
+    background-size: contain;
+    width: 20px;
+    height: 14px;
+    background-repeat: no-repeat;
+    color: #9aa0a6;
+    padding-left: 2em;
+    filter: grayscale(1);
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fmeta-l.cdn.bubble.io%2Ff1676414209755x618395208721566500%2Fgoogle-voice%2520%25281%2529.png?w=&h=&auto=compress&dpr=1&fit=max);
+    background-position: center;
+    width: 29px;
+    height: 29px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-06-512.png);   
+    background-position: center;
+    width: 29px;
+    height: 29px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 2em;
+    cursor: pointer;
+}
+
+/*le damos un margen al contedor de los botones*/
+main section .main-buttons{
+    margin: 0 auto;
+    width: 530px;
+}
+
+/*alineamos los botones*/
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 35px;
+    margin-right: 1em;
+    padding: 0 16px;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    border-radius: 3.2px;
+    border: 0;
+    color: #3c4043;
+    cursor: pointer;
+}
+
+main .main-input-container:hover{
+    /*le damos sombra a los botones cuando pasemos el cursor sobre el*/
+            /*derecha|izq|blur|color*/
+    box-shadow: 0 0 4px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /* ancho de linea- estilo de linea- color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 .5px rgba(0,0,0,.1);
+}
+
+/*-----****************************-------*/
+/*FOOTER*/
+
+footer{
+    margin-top: 260px;
+    width: 100%;
+    background-color: #eceff0;
+}
+
+footer p{
+    padding: 15px 30px;
+    margin-bottom: 0;
+    color: #70757a;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.list-left{
+    margin-left: 1em;
+}
+
+.list-reight{
+    justify-content: flex-end;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #70757a;
+    margin: 1.2em;
+    font-size: 14px;
+}
+
+    
+
